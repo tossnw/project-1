@@ -1,21 +1,16 @@
-let textS = document.querySelector("span");
-let multi = document.querySelector("#multi");
-let devide = document.querySelector("#devide");
-let reset = document.querySelector("#reset");
+const open = document.querySelector("#open");
+const bg_modal = document.querySelector(".modal-bg");
+const modal = document.querySelector(".modal");
 
-let count = 0;
+const modal_door = (state) => {
+  bg_modal.style.display = state;
+  modal.style.display = state;
+};  
 
-multi.onclick = () => {
-  count++;
-  textS.innerHTML = count;
+open.onclick = () => {
+  modal_door("block");
+};
+bg_modal.onclick = () => {
+  modal_door("none");
 };
 
-devide.onclick = () => {
-  count <= 0 ? (count = 0) : (count = count - 1);
-  textS.innerHTML = count;
-};
-
-reset.onclick = () => {
-  count = 0;
-  textS.innerHTML = count;
-};

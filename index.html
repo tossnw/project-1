@@ -7,16 +7,20 @@
     <title>project #1</title>
   </head>
   <body>
-    <center>
-      <h1 style="color: gray">Cliker</h1>
-
-      <div>
-		  <button id="devide">-</button>
-		  <span>0</span>
-		  <button id="multi">+</button>
-      </div>
-	  <button id="reset" style="width: 50%; margin-top: 30px;">reset</button>
-    </center>
+    <div class="container">
+      <header>
+        <button id="open">Open modal</button>
+      </header>
+    </div>  
+    <div class="modal-bg"></div>
+    <div class="modal">
+      <form action="">
+        <h1>Leave an application</h1>
+        <input type="text" placeholder="Alex" />
+        <input type="number" placeholder="+998 00 000 00 00" />
+        <button>Sent</button>
+      </form>
+    </div>
 
     <script src="./scripts/script.js"></script>
   </body>
